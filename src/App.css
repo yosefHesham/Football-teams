@@ -1,4 +1,11 @@
 * {
+  margin: 0;
+}
 
-margin:0
+h1 {
+  color: lightgrey;
+}
+
+.c-white {
+  color: white;
 }

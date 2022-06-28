@@ -1,10 +1,9 @@
-const url = "https://football-apis.herokuapp.com/api/v1/leagues";
+const url = 'https://football-apis.herokuapp.com/api/v1/leagues';
 
-const fetchLeagues = async ( ) => {
-  const response = await fetch(url)
- const data = await response.json();
- console.log(data);
- return data;
-}
+const fetchLeagues = async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+};
 
 export default fetchLeagues;

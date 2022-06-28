@@ -1,27 +1,21 @@
-import { lazy } from "react";
-import fetchLeagues from "../../services/leagues_service";
+import fetchLeagues from '../../services/leagues_service';
 
-const FETCH_TEAMS = "FETCH_TEAMS";
+const FETCH_TEAMS = 'FETCH_TEAMS';
 
-
-const fetchLeaguesAction = (leagues) => {
- return  {
-    type: FETCH_TEAMS,
-    leagues
-  }
-}
-export const fetchLeagesAsync = (dispatch) => {
+const fetchLeaguesAction = (leagues) => ({
+  type: FETCH_TEAMS,
+  leagues,
+});
+export const fetchLeagesAsync = async (dispatch) => {
   const leagues = await fetchLeagues();
-  dispatch(fetchLeaguesAction(leagues))
-}
+  dispatch(fetchLeaguesAction(leagues));
+};
 
-export default function leaguesReducer (state=[],action) {
-  switch(action.type) {
+export default function leaguesReducer(state = [], action) {
+  switch (action.type) {
     case FETCH_TEAMS:
       return action.leagues;
-   default:
-     return state;   
+    default:
+      return state;
   }
-  
 }
-
