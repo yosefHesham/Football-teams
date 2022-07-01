@@ -4,12 +4,16 @@
 > This is a project built with react made for people in love with football, it has all information about teams of the most popular and strong leagues.
 
 
-
-
-
-# [Live Demo] ()
+# [Live Demo] (https://zesty-narwhal-498bd3.netlify.app/)
 
 To get a local copy up and running follow these simple example steps.
+
+### Built With:
+- React.
+- CSS.
+- JSX.
+- Redux.
+- [Football api](https://github.com/ichala/football-api-microverse)
 
 ### Prerequisites
 - git
@@ -48,10 +52,8 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to [Ali](https://github.com/ichala) who created the api.
+- Thanks to [Manel](https://github.com/ha-manel/Football-Leagues) for using her project as inspiration.
 
 ## 📝 License
 
