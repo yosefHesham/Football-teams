@@ -13,3 +13,6 @@ h1 {
 .c-white {
   color: white;
 }
+a{
+  text-decoration: none;
+}
