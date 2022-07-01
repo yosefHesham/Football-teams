@@ -18,14 +18,23 @@ const Home = () => {
     setTeams(!allLeagues ? [] : allLeagues[0]['teams']);
   }, [allLeagues]);
 
+    const changeLeague = (id) => {
+      const league = allLeagues.filter(league => league.id == id)[0];
+      console.log(league);
+      setTeams(league['teams']);
+
+    }
+  console.log(allLeagues);
   return (
     <>
-      <NavBar />
       {!allLeagues ? (
         <FontAwesomeIcon icon="fas fa-spinner fa-spin"></FontAwesomeIcon>
       ) : (
         <>
-          <Filters filters={allLeagues}></Filters>
+          <Filters filters={allLeagues} changeLeague={changeLeague}></Filters>
+          <section className="selectedLeague"> 
+            <img src="" alt="" />
+          </section>
           <section className="teams">
             {teams.map((team) => (
               <pre>{JSON.stringify(team)}</pre>
