@@ -1,8 +1,8 @@
-import fetchLeagues from "../../services/leagues_service";
+import fetchLeagues from '../../services/leagues_service';
 
-const FETCH_LEAGUES = "FETCH_LEAGUES";
+const FETCH_LEAGUES = 'FETCH_LEAGUES';
 
-const FETCH_LEAGUE_TEAMS = "FETCH_LEAGUE_TEAMS";
+const FETCH_LEAGUE_TEAMS = 'FETCH_LEAGUE_TEAMS';
 
 const fetchLeaguesAction = (leagues) => ({
   type: FETCH_LEAGUES,
@@ -11,7 +11,7 @@ const fetchLeaguesAction = (leagues) => ({
 
 export const fetchLeagesAsync = async (dispatch, getState) => {
   const currentLeagues = getState().leagues;
-  if (!currentLeagues || currentLeagues.length == 0) {
+  if (!currentLeagues || currentLeagues.length === 0) {
     const leagues = await fetchLeagues();
     dispatch(fetchLeaguesAction(leagues));
   }
