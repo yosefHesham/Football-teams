@@ -4,7 +4,9 @@
 > This is a project built with react made for people in love with football, it has all information about teams of the most popular and strong leagues.
 
 
-# [Live Demo] (https://zesty-narwhal-498bd3.netlify.app/)
+### Live Demo 
+- [Live Demo](https://zesty-narwhal-498bd3.netlify.app/)
+
 
 To get a local copy up and running follow these simple example steps.
 
