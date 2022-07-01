@@ -1,12 +1,7 @@
 
-# REACT-Template
+# Football teams
 
-> Starter template with linters and bable setup for react projects
-
-
-# Note:
-this is a usage guide, remove it once you install all requirements
-
+> This is a project built with react made for people in love with football, it has all information about teams of the most popular and strong leagues.
 
 
 To get a local copy up and running follow these simple example steps.
@@ -14,9 +9,10 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 - git
 - npm
+- vs cocde
 
 ### Setup
-- clone this temp with `git clone https://github.com/yosefHesham/react-temp`
+- clone this temp with `git clone https://github.com/yosefHesham/Football-teams`
 
 ### Install
 - run `npm install` to install dev dependencies
