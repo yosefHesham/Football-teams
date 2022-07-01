@@ -9,7 +9,7 @@ const Team = ({ team }) => (
       border: '.2px solid #4f5d75',
       width: '100%',
       textAlign: 'center',
-      boxShadow: '0 0 1px rgba(0, 0, 0, .1);',
+      boxShadow: '0 0 5px rgba(0, 0, 0, .3)',
 
     }}
   >
