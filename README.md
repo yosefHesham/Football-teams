@@ -56,7 +56,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - Thanks to [Ali](https://github.com/ichala) who created the api.
 - Thanks to [Manel](https://github.com/ha-manel/Football-Leagues) for using her project as inspiration.
-
+- Thanks to [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for design inspiration.
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import renderer from 'react-test-renderer';
@@ -50,7 +49,7 @@ describe('page render test:', () => {
   it('Homepage should be rendered correctly', () => {
     const page = renderer.create(
       <Provider store={store}>
-          <App />
+        <App />
       </Provider>,
     ).toJSON();
     expect(page).toMatchSnapshot();
